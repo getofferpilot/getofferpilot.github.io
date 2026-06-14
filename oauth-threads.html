@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>OfferPilot — Threads authorization</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#FBF8F2;color:#221F2B;max-width:680px;margin:56px auto;padding:0 22px;line-height:1.6}
+  h2{color:#2D2A6E}
+  .box{background:#fff;border:1px solid #E7E2D6;border-radius:14px;padding:22px 24px;box-shadow:0 8px 30px rgba(45,42,110,.06)}
+  code{display:block;word-break:break-all;background:#F7F6FB;border:1px solid #D8D2C4;border-radius:8px;padding:14px;margin:12px 0;font-size:1.02rem}
+  .muted{color:#6B6357;font-size:.95rem}
+  button{font:inherit;font-weight:700;color:#fff;background:#FF5A5F;border:0;border-radius:10px;padding:10px 18px;cursor:pointer}
+  button:hover{filter:brightness(1.05)}
+</style>
+</head>
+<body>
+<h2>OfferPilot · Threads authorization</h2>
+<div class="box" id="box"><p>Reading your authorization code…</p></div>
+<p class="muted">This page only reads the <code style="display:inline;padding:2px 6px;margin:0">code</code> value from the URL so you can paste it back into the setup. Nothing is sent anywhere; this page has no server.</p>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  var code = p.get('code');
+  var err = p.get('error_description') || p.get('error');
+  var box = document.getElementById('box');
+  if (code) {
+    box.innerHTML =
+      '<p><b>Success.</b> Copy the entire code below and paste it back to Claude:</p>' +
+      '<code id="c">' + code.replace(/</g, '&lt;') + '</code>' +
+      '<button onclick="navigator.clipboard.writeText(document.getElementById(\'c\').textContent).then(function(){this.textContent=\'Copied ✓\'}.bind(this))">Copy code</button>';
+  } else if (err) {
+    box.innerHTML = '<p><b>Authorization error:</b></p><code>' + err.replace(/</g, '&lt;') + '</code>' +
+      '<p class="muted">Re-open the authorize link, or send this to Claude.</p>';
+  } else {
+    box.innerHTML = '<p>No code in the URL yet. Open the authorize link from the setup, approve as the OfferPilot Threads account, and you’ll land back here with your code.</p>';
+  }
+})();
+</script>
+</body>
+</html>
