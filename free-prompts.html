@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your free starter pack — 5 tested AI job-search prompts · OfferPilot</title>
+<meta name="description" content="5 of OfferPilot's 52 tested AI job-search prompts — copy-paste ready: spot ghost jobs, quantify your resume honestly, fix a cover-letter opener, send a cold message that isn't cringe, and reframe a rejection.">
+<meta name="robots" content="noindex">
+<style>
+  :root{--indigo:#2D2A6E;--coral:#FF5A5F;--tint:#F7F6FB;--ink:#1c1c28;--muted:#5b5b6b;--green:#2FA36B}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--tint);line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  header{background:var(--indigo);color:#fff;padding:14px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:center}
+  .brand{font-weight:800;letter-spacing:.3px}
+  header a{color:#cfcdf2;text-decoration:none;font-size:.95rem}
+  .hero{background:var(--indigo);color:#fff;padding:54px 0 60px;text-align:center}
+  .pill{display:inline-block;background:var(--coral);color:#fff;font-weight:700;font-size:.8rem;padding:7px 16px;border-radius:999px;letter-spacing:.5px}
+  .hero h1{font-size:2.2rem;line-height:1.18;margin:18px 0 12px;font-weight:800}
+  .hero p{color:#cfcdf2;font-size:1.1rem;max-width:580px;margin:0 auto}
+  section{padding:40px 0}
+  h2{color:var(--indigo);font-size:1.4rem;margin-bottom:12px}
+  .card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 8px 30px rgba(45,42,110,.07);margin-bottom:22px}
+  .card.tint{background:#fff;border-left:5px solid var(--coral)}
+  .legend dt{font-weight:700;color:var(--indigo);margin-top:12px}
+  .legend dd{color:var(--muted);margin-left:0}
+  code{background:#efeefb;color:var(--indigo);padding:2px 6px;border-radius:5px;font-size:.9em}
+  .promptcard h3{color:var(--indigo);font-size:1.18rem;margin-bottom:4px}
+  .when{color:var(--muted);font-size:.92rem;margin-bottom:14px}
+  pre{background:#1c1b3a;color:#e9e8ff;border-radius:12px;padding:18px;overflow-x:auto;font-size:.86rem;line-height:1.5;white-space:pre-wrap;word-break:break-word}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;margin:16px 0 8px;gap:12px}
+  .tag{font-size:.78rem;font-weight:700;color:var(--green);background:#e7f6ee;padding:4px 10px;border-radius:999px}
+  .copy{background:var(--indigo);color:#fff;border:0;font-weight:700;padding:9px 16px;border-radius:9px;cursor:pointer;font-size:.9rem}
+  .copy:hover{filter:brightness(1.12)}
+  .good{font-size:.92rem;color:var(--muted);margin-top:12px}
+  .good b{color:var(--ink)}
+  .btn{display:inline-block;background:var(--coral);color:#fff;font-weight:700;text-decoration:none;padding:14px 28px;border-radius:12px;font-size:1.02rem}
+  .btn:hover{filter:brightness(1.05)}
+  footer{background:#211F52;color:#9a9aac;padding:26px 0;text-align:center;font-size:.9rem}
+  footer a{color:#cfcdf2;text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="brand">OfferPilot</span><a href="https://offerpilot.gumroad.com/l/aijobsearch">The full toolkit →</a></div></header>
+
+<div class="hero"><div class="wrap">
+  <span class="pill">YOUR FREE STARTER PACK</span>
+  <h1>5 tested prompts to start your search today</h1>
+  <p>Five of our 52 prompts — each one actually run on a real résumé and graded, not just typed out. Copy, paste, go.</p>
+</div></div>
+
+<section><div class="wrap">
+
+  <div class="card tint">
+    <h2>How to use these in 60 seconds</h2>
+    <p>Anything in <code>[brackets]</code> = swap in your real stuff. Two prompts below reuse a couple of placeholders — here's the quick fill (in the full toolkit you build these <em>once</em> and never re-paste):</p>
+    <dl class="legend">
+      <dt><code>{MASTER_CONTEXT}</code> — who you are</dt>
+      <dd>Paste your résumé, or just 3 honest lines: what you've done, what you're good at, where you're headed.</dd>
+      <dt><code>{VOICE_SAMPLE}</code> — how you sound</dt>
+      <dd>Paste a paragraph you actually wrote (an old message, a journal note). It's what stops the output sounding like a robot.</dd>
+    </dl>
+    <p style="margin-top:12px;color:var(--muted)"><b>The one rule across all of these:</b> they never invent numbers, companies, or feedback. If something's missing, they ask you — they don't make it up. That's the whole point.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="card promptcard">
+    <h3>1 · Ghost-Job Detector</h3>
+    <p class="when">Is this listing even real? Run it on a batch of tabs before you waste an hour applying.</p>
+    <pre>You're a sharp recruiter friend who's seen thousands of listings and knows
+which ones are real openings vs. "ghost jobs" — reposted forever, scraped for
+résumés, posted to look like a growing company, or never actually filled.
+
+Here's a listing I'm thinking about applying to:
+=== JOB_POST ===
+[Paste the full job listing — title, description, requirements, company,
+posting date if you can see it.]
+
+Do three things, fast:
+
+1. Score it 0-10 on how likely it is to be a REAL, active opening (10 = clearly
+   real and being filled now; 0 = almost certainly a ghost/fake). Give the
+   number, then one plain-English line on why.
+
+2. List the specific red flags AND green flags you actually see IN THIS LISTING
+   — quote the exact phrases. Common ghost signals: vague or copy-paste
+   responsibilities, "always hiring" / "evergreen" / "building a pipeline,"
+   no salary range, reposted/very old date, an absurdly long must-have list,
+   a generic company with no real detail. Green signals: a specific team,
+   a named hiring manager, a real salary band, concrete near-term projects,
+   recent and specific.
+
+3. Give a one-word call: APPLY · PROCEED WITH CAUTION · SKIP — plus one
+   sentence on what to check before you spend time on it.
+
+STRICT RULES: Judge ONLY what's in the listing I pasted. Do not invent facts
+about the company, the posting date, or the salary if they're not there — if a
+signal is missing, say "not stated" and treat that as its own (mild) flag.
+Don't pad. No generic job-search advice. Skimmable.</pre>
+    <div class="toolbar"><span class="tag">✓ tested &amp; graded</span><button class="copy">Copy prompt</button></div>
+    <p class="good"><b>What good looks like:</b> a number, a one-line verdict, and red/green flags that <em>quote the actual listing</em> — and it treats missing info (no salary, no date) as a signal instead of inventing one.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="card promptcard">
+    <h3>2 · Quantify My Achievements (real numbers only)</h3>
+    <p class="when">Turn "responsible for…" bullets into outcome-first ones — without a single invented figure.</p>
+    <pre>Turn my duty-style resume bullets into outcome-first ones — using only numbers I
+actually give you, never invented ones.
+
+=== RESUME_DRAFT ===
+[Paste the bullets (or the whole resume) you want to strengthen.]
+=== MASTER_CONTEXT ===
+[Paste your {MASTER_CONTEXT}.]
+=== MY REAL NUMBERS ===
+[List any real metrics you remember: team size, # of campaigns, budget, %
+growth, volume, timeframe, how many stores/clients/students. Even rough ones
+you can stand behind. If you have none yet, write "none yet."]
+
+Do this:
+
+1. For each weak bullet, rewrite it outcome-first: strong verb → what I did →
+   the result or scale. One line each where possible.
+
+2. Use numbers ONLY from "MY REAL NUMBERS" or clearly stated in my resume. Do
+   NOT estimate, invent, or "make a realistic guess." This is a hard rule.
+
+3. Where a bullet would clearly be stronger WITH a number and I didn't give one,
+   keep the bullet honest and tag it [add a number? e.g. how many campaigns
+   per season?] — a specific question I can answer, not a placeholder you fill.
+
+4. If I'm light on numbers, also show me where scale can come from non-number
+   facts I DO have (number of locations, named tools, scope of who I worked
+   with) — real specifics beat invented percentages.
+
+Plain, confident language. No "spearheaded," no "results-driven." Match the way
+I actually talk, without copying its content, using this sample:
+=== VOICE_SAMPLE ===
+[Paste your {VOICE_SAMPLE}.]</pre>
+    <div class="toolbar"><span class="tag">✓ tested &amp; graded</span><button class="copy">Copy prompt</button></div>
+    <p class="good"><b>What good looks like:</b> outcome-first bullets that use <em>only</em> your numbers, with <code>[add a number?]</code> tags asking a specific question wherever a metric is missing — never a quietly invented stat you'd have to defend in the interview.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="card promptcard">
+    <h3>3 · The Hook (fix a cover letter's first two lines)</h3>
+    <p class="when">The first two lines decide whether anyone reads the rest. Kill the "I am writing to apply…" opener.</p>
+    <pre>Rewrite the opening of my cover letter so the first two lines make someone want
+to keep reading. Right now it's probably generic — fix that.
+
+=== CURRENT OPENING ===
+[Paste the first 1-2 lines (or the whole first paragraph) of your
+{COVER_LETTER_DRAFT}.]
+=== WHAT I KNOW ABOUT THE COMPANY/ROLE ===
+[Paste your Company Brief, or 2-3 real, specific things about this company or
+role — a project they're working on, something from their About page, why this
+role exists. If you have nothing specific, say so.]
+=== MY VOICE ===
+[Paste your {VOICE_SAMPLE}.]
+
+Give me 3 different opening options, each 1-2 sentences. Each one should:
+
+- Lead with something SPECIFIC and real (about the role, the company, or a
+  genuine point of connection from my background) — never "I am writing to
+  apply for…", "I am excited to…", or empty flattery like "I've long admired
+  your company."
+- Sound like ME — match the warmth and rhythm of my voice sample, not its
+  content. Plain, human, no buzzwords.
+- Earn the next sentence. The job of line one is to make them read line two.
+
+After the 3 options, tell me in one line which you'd pick and why.
+
+HARD RULES:
+- Use ONLY real specifics I gave you. If I didn't give you a concrete detail
+  about the company, do NOT invent one (a fake project, a made-up value, a news
+  event) — instead, build the hook from a REAL detail in my own background, or
+  tell me one specific thing to go look up to make the hook land.
+- No AI-slop openers, no em-dash drama, no "In today's competitive market…".</pre>
+    <div class="toolbar"><span class="tag">✓ tested &amp; graded</span><button class="copy">Copy prompt</button></div>
+    <p class="good"><b>What good looks like:</b> three openers that each lead with something <em>real</em> and sound like you — and if you didn't give it a true company specific, it refuses to fabricate one and tells you exactly what to look up.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="card promptcard">
+    <h3>4 · The Cold Message That Isn't Cringe</h3>
+    <p class="when">Reach a real person inside the company — and sound like a human, not a job applicant.</p>
+    <pre>You're helping me write a short, warm cold outreach message that sounds like a real person, not a job applicant.
+
+About me: {MASTER_CONTEXT}
+Who I'm reaching out to and any shared context (mutual, alum, ex-colleague, or fully cold): {CONTACT_CONTEXT}
+The company / role I'm interested in: {COMPANY_NAME}
+
+Match my voice. Here is how I actually write — copy this register, rhythm, and warmth; do NOT invent facts, achievements, or shared history I didn't give you:
+{VOICE_SAMPLE}
+
+Write a message under 90 words that:
+- opens with the real, specific reason I'm reaching out to THIS person (tie to {CONTACT_CONTEXT}; if it's fully cold, lead with something true about why their work/team/the role caught my attention — never fake a connection)
+- says in one honest line who I am and the single most relevant thing I bring (pull it from {MASTER_CONTEXT})
+- ends with one small, low-pressure ask (a 15-minute chat, or "would you be open to a quick question?") — NOT "please consider my application"
+
+Hard rules:
+- No clichés, no "I hope this finds you well," no "I'm passionate about," no flattery I can't back up.
+- Strip any AI tells: em-dashes used as drama, tidy three-part lists, "Moreover/Furthermore," over-balanced sentences. It should read like a smart person typing fast, not like a cover letter.
+- If you don't have enough about the recipient to make the opener specific, ASK me one question instead of inventing a detail.
+
+Then give me a one-line subject (if email) and tell me the one thing in this message most likely to get a reply, so I can lean into it.</pre>
+    <div class="toolbar"><span class="tag">✓ tested &amp; graded</span><button class="copy">Copy prompt</button></div>
+    <p class="good"><b>What good looks like:</b> under 90 words, opens with a <em>true</em> specific reason, names one real strength from your history, closes with a small ask — and reads like your actual texts. No invented mutual friend, no fake "I've long admired."</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="card promptcard">
+    <h3>5 · Reframe the Rejection</h3>
+    <p class="when">Run it the moment a rejection (or a final-round ghosting) lands — before you spiral or rage-apply.</p>
+    <pre>I just got a rejection (or a no I've finally accepted) and it stung. Help me
+turn it into something useful instead of something that wrecks my week — and
+be honest with me, not just nice.
+
+About me and where I'm headed (so this is grounded in my real situation, not
+generic reassurance):
+{MASTER_CONTEXT}
+
+Optional — how I write, so you can talk to me in my own register (if I leave
+this blank, just be plainly warm; do NOT imitate a voice you can't see):
+{VOICE_SAMPLE}
+
+The rejection (paste the email, or just tell me what happened — the role, how
+far I got, anything they said):
+[Paste or describe. "They just ghosted me after the final round" is a valid
+answer.]
+
+Do this:
+
+1. First, just acknowledge it honestly in a sentence or two. Don't rush to the
+   silver lining. If this one was a real loss (a role I wanted, a final round),
+   say so plainly — I'll trust the rest more if you don't pretend it's fine.
+
+2. Separate what this rejection actually tells me from what it does NOT. Most
+   rejections are about fit, timing, budget, or an internal hire — things I
+   can't see and didn't control. Be specific about which signals (if any) are
+   genuinely about something I can improve, and which are just noise I should
+   stop reading meaning into.
+
+3. If — and only if — there's a real, actionable lesson here, name ONE concrete
+   thing to adjust next time. If there honestly isn't one (sometimes you did
+   everything right and still lost), say that clearly instead of inventing a
+   flaw for me to fix.
+
+4. End by reminding me, in plain and specific terms, of what I'm still bringing
+   to this search — pulled from MY actual background above (real skills, real
+   wins, the transferable strengths), NOT a generic "you've got this." One
+   rejection doesn't subtract any of it.
+
+Rules: warm but truthful. No toxic positivity, no "everything happens for a
+reason," no buzzwords. Do not invent feedback the employer didn't give or a
+mistake I didn't make. If they gave no reason, don't fabricate one. If you don't
+have my voice sample, stay plainly warm rather than guessing at how I sound.</pre>
+    <div class="toolbar"><span class="tag">✓ tested &amp; graded</span><button class="copy">Copy prompt</button></div>
+    <p class="good"><b>What good looks like:</b> it sits with the sting for a beat, cleanly splits <em>signal</em> from <em>noise</em>, names at most one real adjustment — and is willing to say "there's nothing to fix here, you just lost a close one."</p>
+  </div>
+
+  <div class="card" style="text-align:center;background:var(--indigo);color:#fff">
+    <h2 style="color:#fff">These 5 are a taste. The system is the toolkit.</h2>
+    <p style="color:#cfcdf2;max-width:560px;margin:0 auto 22px">52 tested prompts as one connected system: paste your story <em>once</em>, and every resume bullet, cover letter and message sounds like you — across 8 journeys from "is this job real?" to "here's my counter-offer."</p>
+    <a class="btn" href="https://offerpilot.gumroad.com/l/aijobsearch">See the full toolkit — $15 →</a>
+  </div>
+
+</div></section>
+
+<footer><div class="wrap">
+  © 2026 OfferPilot · Tools that get you to the offer · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:offerpilot.help@gmail.com">Contact</a>
+</div></footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.closest('.promptcard').querySelector('pre').innerText;
+    navigator.clipboard.writeText(t).then(function(){
+      var o=b.textContent;b.textContent='Copied ✓';setTimeout(function(){b.textContent=o;},1600);
+    });
+  });
+});
+</script>
+</body>
+</html>
